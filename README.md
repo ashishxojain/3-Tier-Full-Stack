@@ -91,7 +91,7 @@ writing and applying jenkins script in pipeline scripts using grrovy language.
 ### Jenkins dev pipeline glimpse
 ![alt text](https://github.com/ashishxojain/3-Tier-Full-Stack/blob/main/ScreenShots/jenkinsDev.png)
 ## Jenkins Prod pipeline glimpse
-![alt text](https://github.com/ashishxojain/3-Tier-Full-Stack/blob/main/ScreenShots/jenkinsProd.png}
+![alt text](https://github.com/ashishxojain/3-Tier-Full-Stack/blob/main/ScreenShots/jenkinsProd.png)
 
 ### EKS Cluster Setup
 
