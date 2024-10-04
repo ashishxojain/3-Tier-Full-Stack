@@ -138,46 +138,20 @@ Using scripts written in eksScripts
 ## Kubernetes Manifests
 
 ### Secrets Configuration (`secrets.yml`)
+secret keys required to setup database 'Cloudinary' 
+used secret key namespaces
+CLOUDINARY CLOUDNAME
+CLOUDINARY KEY
+CLOUDINARY SECRET
+DB UR
 
-```yaml
-apiVersion: v1
-kind: Secret
-metadata:
-  name: yelp-camp-secrets
-type: Opaque
-data:
-  CLOUDINARY_CLOUD_NAME: ZGhkcGxvZmZxCg==
-  CLOUDINARY_KEY: Njg5NzQ3MzU4MTI4NTQ5Cg==
-  CLOUDINARY_SECRET: X2VQWm5IRWxYUzNNVDZFLWVwSDd0MmpoMW40Cg==
-  MAPBOX_TOKEN: c2suZXlKMUlqb2lZWE5vYVhOb2FtcGhhVzRpTENKaElqb2lZMjB3ZFdrMlpYVjNNVEEzWlRKeGN6QjRPWGxsZFhab1lTSjkuMkd4NW9pWmQyTjlER3RBSm1yakJfZwo=
-  DB_URL: bW9uZ29kYitzcnY6Ly8xMTcyMTIxMDAwNDpQVklPQXNsWkFGSGlxczRPQGNsdXN0ZXIxLnl6ZHlpLm1vbmdvZGIubmV0Lz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1DbHVzdGVyMQo=
-  SECRET: Q2x1c3RlcjEK
-```
 
-### Deployment Configuration (`deployment.yml`)
 
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: yelp-camp-deployment
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: yelp-camp
-  template:
-    metadata:
-      labels:
-        app: yelp-camp
-    spec:
-      containers:
-        - name: yelp-camp-container
-          image: ashishjjain/camp:latest
-          ports:
-            - containerPort: 3000
-          env:
-            - name: CLOUDINARY_CLOUD_NAME
-              valueFrom:
-                secretKeyRef:
-                  name: y
+                  
+                  
+### Setting up AWS ec2 
+3 active ec2 containers for eks to achieve scalability for large projects
+a container for setting up jenkins and aquaTrivy
+a container for setting sonarqube 
+and a container for node js application
+
