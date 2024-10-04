@@ -140,10 +140,10 @@ Using scripts written in eksScripts
 ### Secrets Configuration (`secrets.yml`)
 secret keys required to setup database 'Cloudinary' 
 used secret key namespaces
-CLOUDINARY CLOUDNAME
-CLOUDINARY KEY
-CLOUDINARY SECRET
-DB UR
+- CLOUDINARY CLOUDNAME
+- CLOUDINARY KEY
+- CLOUDINARY SECRET
+- DB URL
 
 
 
