@@ -87,8 +87,13 @@ writing and applying jenkins script in pipeline scripts using grrovy language.
   ```
 
 ---
+## Jenkins manifests
+### Jenkins dev pipeline glimpse
+![alt text](https://github.com/ashishxojain/3-Tier-Full-Stack/blob/main/ScreenShots/jenkinsDev.png)
+## Jenkins Prod pipeline glimpse
+![alt text](https://github.com/ashishxojain/3-Tier-Full-Stack/blob/main/ScreenShots/jenkinsProd.png}
 
-## EKS Cluster Setup
+### EKS Cluster Setup
 
 Follow the steps to set up and deploy the application to AWS EKS using the provided `eksScripts`.
 
@@ -136,6 +141,7 @@ Using scripts written in eksScripts
 ---
 
 ## Kubernetes Manifests
+![alt text](https://github.com/ashishxojain/3-Tier-Full-Stack/blob/main/ScreenShots/eksServices.png)
 
 ### Secrets Configuration (`secrets.yml`)
 secret keys required to setup database 'Cloudinary' 
@@ -145,8 +151,8 @@ used secret key namespaces
 - CLOUDINARY SECRET
 - DB URL
 
-
-
+## Database Manifests
+![alt text](https://github.com/ashishxojain/3-Tier-Full-Stack/blob/main/ScreenShots/db.png)
                   
                   
 ### Setting up AWS ec2 
@@ -154,4 +160,8 @@ used secret key namespaces
 a container for setting up jenkins and aquaTrivy
 a container for setting sonarqube 
 and a container for node js application
+![alt text](https://github.com/ashishxojain/3-Tier-Full-Stack/blob/main/ScreenShots/EC2Containers.png)
+for tools to run on specific ports inbound rules are added
+![alt text](https://github.com/ashishxojain/3-Tier-Full-Stack/blob/main/ScreenShots/inboundRules.png)
+
 
